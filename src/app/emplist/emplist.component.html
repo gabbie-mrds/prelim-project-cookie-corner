@@ -1,0 +1,52 @@
+<style>
+    h2,h5{
+        font-family: "Trocchi", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    button,span, p, a{
+        font-family: "Josefin Sans", serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        color: #7e5758
+    }
+
+</style>
+
+<div style="background-color: #987070">
+    <br><br>
+    <h2 class = "text-4xl" style = "text-align: center; color: #f1e5d1;">MEET THE TEAM</h2>
+    <br>
+    <div class = "grid grid-cols-3 justify-items-center">
+        <div *ngFor = "let item of emp" class="w-full max-w-sm rounded-lg shadow-xl" style = "background-color: #f1e5d1;;">
+            <br>
+            <div  class="flex flex-col items-center pb-10">
+                <img class="w-24 h-24 mb-3 rounded-full shadow-lg" [src]="item.empphoto" alt="Bonnie image"/>
+                <h5 class="mb-1 text-xl text-gray-900 dark:text-white" style = "color: #7e5758"><b class = "font-semibold">{{ item.empName }}</b></h5>
+                <p class="text-md  font-medium uppercase" style="color: #7e5758"><b class = "font-semibold">{{ item.empPosition }}</b></p>
+                <p class="text-md font-medium" style="color: #7e5758"><b class = "font-medium">{{ item.email }}</b></p>
+                
+                <br>            
+                <button class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 uppercase" style = "background-color: #987070; color:#f5f5f5;" (click) = "showDetails()">Show Details</button>
+
+                <div *ngIf = "ifAdmin" >
+                    <br>
+                    <p><b class = "font-semibold">#</b> {{ item.empNum }}</p>
+                    <p><b class = "font-semibold">Gender:</b> {{ item.gender }}</p>
+                    <p><b class = "font-semibold">Employment Status:</b> {{ item.empStatus }}</p>
+                    <p><b class = "font-semibold">Salary:</b> {{ item.salary }}</p>
+    
+                </div>
+                <!--<div *ngIf = "!ifAdmin" class = "justify-items-center">
+                    <br>
+                    <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Close</a>
+                </div>-->    
+            </div>
+            
+        </div><br><br>
+    </div>
+    
+    
+</div>

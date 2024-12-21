@@ -1,0 +1,295 @@
+<style>
+     h2{
+        font-family: "Trocchi", serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    span, p, a{
+        font-family: "Josefin Sans", serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
+    .cookie-name{
+        font-family: "Trocchi", serif;
+        font-weight: 400;
+        font-style: normal;
+        color: #7e5758;
+    }
+    .price{
+        font-family: "Josefin Sans", serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+        color: #7e5758;
+    }
+    button{
+        background-color: #7e5758;
+        font-family: "Josefin Sans", serif;
+        font-optical-sizing: auto;
+        font-weight: 300;
+        font-style: normal;
+    }
+
+    button:hover{
+        background-color: #c39898;
+    }
+</style>
+
+<div style="background-color: #987070">
+    <br><br>
+    <h2 class = "text-4xl text-center" style = "color: #f5f5f5">OUR PRODUCTS</h2>
+
+    <div class = "grid grid-cols-3 gap-4 justify-items-center">
+
+
+        <div class="relative flex flex-col my-6 shadow-sm border border-slate-200 rounded-lg w-96" style = "background-color: #ffffff;">
+            <div class="relative p-2.5 h-96 overflow-hidden rounded-xl bg-clip-border">
+            <img
+                [src]=img1
+                alt="card-image"
+                class="h-full w-full object-cover rounded-md"
+            />
+            </div>
+            <div class="p-4">
+            <div class="mb-2 flex items-center justify-between">
+                <p class="text-slate-800 text-xl font-semibold cookie-name">
+                RED VELVET COOKIE
+                </p>
+                <p class="text-cyan-600 text-xl font-semibold price">
+                PHP 95.00
+                </p>
+            </div>
+            <p class="text-slate-600 leading-normal font-light">
+                These are soft-baked red velvet chocolate chip cookies made from scratch.
+            </p>
+            <button class="rounded-md w-full mt-6 bg-cyan-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-cyan-700 focus:shadow-none active:bg-cyan-700 hover:bg-cyan-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none uppercase" type="button">
+                Add to Cart
+            </button>
+            </div>
+        </div>
+        
+        <div class="relative flex flex-col my-6 shadow-sm border border-slate-200 rounded-lg w-96" style = "background-color: #ffffff">
+            <div class="relative p-2.5 h-96 overflow-hidden rounded-xl bg-clip-border">
+            <img
+                [src]=img2
+                alt="card-image"
+                class="h-full w-full object-cover rounded-md"
+            />
+            </div>
+            <div class="p-4">
+            <div class="mb-2 flex items-center justify-between">
+                <p class="text-slate-800 text-xl font-semibold cookie-name">
+                S'MORES COOKIE
+                </p>
+                <p class="text-cyan-600 text-xl font-semibold price">
+                PHP 110.00
+                </p>
+            </div>
+            <p class="text-slate-600 leading-normal font-light">
+                These chewy, gooey S'mores cookies are beyond delicious and there's no campfire required!
+            </p>
+            <button class="rounded-md w-full mt-6 bg-cyan-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-cyan-700 focus:shadow-none active:bg-cyan-700 hover:bg-cyan-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none uppercase" type="button">
+                Add to Cart
+            </button>
+            </div>
+        </div>
+        
+        
+
+        <div class="relative flex flex-col my-6 shadow-sm border border-slate-200 rounded-lg w-96" style = "background-color: #ffffff">
+            <div class="relative p-2.5 h-96 overflow-hidden rounded-xl bg-clip-border">
+            <img
+                [src]=img3
+                class="h-full w-full object-cover rounded-md"
+            />
+            </div>
+            <div class="p-4">
+            <div class="mb-2 flex items-center justify-between">
+                <p class="text-slate-800 text-xl font-semibold cookie-name">
+                CHOCO CHIP COOKIE
+                </p>
+                <p class="text-cyan-600 text-xl font-semibold price">
+                PHP 80.00
+                </p>
+            </div>
+            <p class="text-slate-600 leading-normal font-light">
+                The classic choco chip cookies with crisp edges and chewy middles loaded with chocolate chips!!
+            </p>
+            <button class="rounded-md w-full mt-6 bg-cyan-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-cyan-700 focus:shadow-none active:bg-cyan-700 hover:bg-cyan-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none uppercase" type="button">
+                Add to Cart
+            </button>
+            </div>
+        </div>
+        <br>
+        
+    </div>
+
+    <div class = "grid grid-cols-3 gap-4 justify-items-center">
+
+
+        <div class="relative flex flex-col my-6 shadow-sm border border-slate-200 rounded-lg w-96" style = "background-color: #ffffff">
+            <div class="relative p-2.5 h-96 overflow-hidden rounded-xl bg-clip-border">
+            <img
+                [src]=img5
+                alt="card-image"
+                class="h-full w-full object-cover rounded-md"
+            />
+            </div>
+            <div class="p-4">
+            <div class="mb-2 flex items-center justify-between">
+                <p class="text-slate-800 text-xl font-semibold cookie-name">
+                COOKIE MONSTER
+                </p>
+                <p class="text-cyan-600 text-xl font-semibold price">
+                PHP 110.00
+                </p>
+            </div>
+            <p class="text-slate-600 leading-normal font-light">
+                Om nom nom nom crunchy cookie monster, Sesame Street peeps where ya at?  
+            </p>
+            <button class="rounded-md w-full mt-6 bg-cyan-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-cyan-700 focus:shadow-none active:bg-cyan-700 hover:bg-cyan-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none uppercase" type="button">
+                Add to Cart
+            </button>
+            </div>
+        </div>
+        
+        <div class="relative flex flex-col my-6 shadow-sm border border-slate-200 rounded-lg w-96" style = "background-color: #ffffff">
+            <div class="relative p-2.5 h-96 overflow-hidden rounded-xl bg-clip-border">
+            <img
+                [src]=img4
+                alt="card-image"
+                class="h-full w-full object-cover rounded-md"
+            />
+            </div>
+            <div class="p-4">
+            <div class="mb-2 flex items-center justify-between">
+                <p class="text-slate-800 text-xl font-semibold cookie-name">
+                CHERRY BOMB 
+                </p>
+                <p class="text-cyan-600 text-xl font-semibold price">
+                PHP 100.00
+                </p>
+            </div>
+            <p class="text-slate-600 leading-normal font-light">
+                Cherry boom boom! A cherry flush flavor packed with chocolate and the right amount of sugar. 
+            </p>
+            <button class="rounded-md w-full mt-6 bg-cyan-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-cyan-700 focus:shadow-none active:bg-cyan-700 hover:bg-cyan-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none uppercase" type="button">
+                Add to Cart
+            </button>
+            </div>
+        </div>
+
+        <div class="relative flex flex-col my-6 shadow-sm border border-slate-200 rounded-lg w-96" style = "background-color: #ffffff">
+            <div class="relative p-2.5 h-96 overflow-hidden rounded-xl bg-clip-border">
+            <img
+                [src]=img6
+                class="h-full w-full object-cover rounded-md"
+            />
+            </div>
+            <div class="p-4">
+            <div class="mb-2 flex items-center justify-between">
+                <p class="text-slate-800 text-xl font-semibold cookie-name">
+                COOKIES N’ CREAM 
+                </p>
+                <p class="text-cyan-600 text-xl font-semibold price">
+                PHP 100.00
+                </p>
+            </div>
+            <p class="text-slate-600 leading-normal font-light">
+                Cookies and cream are the perfect combo in a cookie all-in-one.
+            </p>
+            <button class="rounded-md w-full mt-6 bg-cyan-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-cyan-700 focus:shadow-none active:bg-cyan-700 hover:bg-cyan-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none uppercase" type="button">
+                Add to Cart
+            </button>
+            </div>
+        </div>
+        
+        <br>
+    </div>
+
+    <div class = "grid grid-cols-3 gap-4 justify-items-center">
+
+
+        
+        
+        <div class="relative flex flex-col my-6 shadow-sm border border-slate-200 rounded-lg w-96" style = "background-color: #ffffff">
+            <div class="relative p-2.5 h-96 overflow-hidden rounded-xl bg-clip-border">
+            <img
+                [src]=img8
+                alt="card-image"
+                class="h-full w-full object-cover rounded-md"
+            />
+            </div>
+            <div class="p-4">
+            <div class="mb-2 flex items-center justify-between">
+                <p class="text-slate-800 text-xl font-semibold cookie-name">
+                MATCHA LOVE
+                </p>
+                <p class="text-cyan-600 text-xl font-semibold price">
+                PHP 100.00
+                </p>
+            </div>
+            <p class="text-slate-600 leading-normal font-light">
+                Much of matcha love! Matcha lovers we made sure we got your backs, this is for you!
+            </p>
+            <button class="rounded-md w-full mt-6 bg-cyan-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-cyan-700 focus:shadow-none active:bg-cyan-700 hover:bg-cyan-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none uppercase" type="button">
+                Add to Cart
+            </button>
+            </div>
+        </div>
+        
+        <div class="relative flex flex-col my-6 shadow-sm border border-slate-200 rounded-lg w-96" style = "background-color: #ffffff">
+            <div class="relative p-2.5 h-96 overflow-hidden rounded-xl bg-clip-border">
+            <img
+                [src]=img7
+                alt="card-image"
+                class="h-full w-full object-cover rounded-md"
+            />
+            </div>
+            <div class="p-4">
+            <div class="mb-2 flex items-center justify-between">
+                <p class="text-slate-800 text-xl font-semibold cookie-name">
+                KITKAT OVERLOAD
+                </p>
+                <p class="text-cyan-600 text-xl font-semibold price">
+                PHP 110.00
+                </p>
+            </div>
+            <p class="text-slate-600 leading-normal font-light">
+                Chocolate overload - this chocolate drenched topped with Kitkat will satisfy your sweet tooth.
+            </p>
+            <button class="rounded-md w-full mt-6 bg-cyan-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-cyan-700 focus:shadow-none active:bg-cyan-700 hover:bg-cyan-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none uppercase" type="button">
+                Add to Cart
+            </button>
+            </div>
+        </div>
+
+        <div class="relative flex flex-col my-6 shadow-sm border border-slate-200 rounded-lg w-96" style = "background-color: #ffffff">
+            <div class="relative p-2.5 h-96 overflow-hidden rounded-xl bg-clip-border">
+            <img
+                [src]=img9
+                class="h-full w-full object-cover rounded-md"
+            />
+            </div>
+            <div class="p-4">
+            <div class="mb-2 flex items-center justify-between">
+                <p class="text-slate-800 text-xl font-semibold cookie-name">
+                BISCOFF BUTTER
+                </p>
+                <p class="text-cyan-600 text-xl font-semibold price">
+                PHP 110.00
+                </p>
+            </div>
+            <p class="text-slate-600 leading-normal font-light">
+                A buterlicious cookie that is topped with the flavor of the famous biscuit, lotus biscoff.
+            </p>
+            <button class="rounded-md w-full mt-6 bg-cyan-600 py-2 px-4 border border-transparent text-center text-sm text-white transition-all shadow-md hover:shadow-lg focus:bg-cyan-700 focus:shadow-none active:bg-cyan-700 hover:bg-cyan-700 active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none uppercase" type="button">
+                Add to Cart
+            </button>
+            </div>
+        </div>
+        <br>
+        
+    </div>
+  </div>
